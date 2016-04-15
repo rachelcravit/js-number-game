@@ -7,4 +7,15 @@ var correctGuess = false;
 
 var randomNumber = Math.floor(Math.random() * 10) + 1;
 
+var guess = prompt("I am thinking of a number between 1 and 10. Care to guess what it is?");
+  if (parseInt(guess) === randomNumber) {
+    correctGuess = true;
+  }
 
+  if (correctGuess) {
+    alert("You are correct!")
+  }
+
+  else {
+    alert("You are not correct.")
+  }

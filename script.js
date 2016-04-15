@@ -1,7 +1,8 @@
 /* Welcome to the itty bitty number guessing game!
 Players must guess a random number between 1-10.
-If incorrect, the player will receive a clue as to whether the random number is higher or lower
-than their guess. */
+If incorrect, the player will get a second try,
+receiving a clue as to whether the random number is higher or lower
+than their original guess. */
 
 var correctGuess = false;
 
@@ -13,9 +14,6 @@ var guess = prompt("I am thinking of a number between 1 and 10. Care to guess wh
   }
 
   if (correctGuess) {
-    alert("You are correct!")
-  }
-
-  else {
-    alert("You are not correct.")
-  }
+    alert("You are correct!");
+  } else {
+    alert("Sorry, the correct answer was " + randomNumber + ".");  }
